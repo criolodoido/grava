@@ -1,0 +1,37 @@
+<RootScreen>:
+	PrimeiroScreen:
+	SegundoScreen:
+	
+<PrimeiroScreen>:
+	GridLayout:
+		cols: 1
+		padding: 0, 0
+		spacing: 0, 0
+		size_hint: (1, .8)
+		Label:
+			text: "Informe seu nome aqui:"
+			font_size: '20dp'
+		TextInput:
+			size_hint_x: 1
+			hint_text: "Digite seu nome aqui!"
+			font_size: '20dp'
+			foreground_color: [0,0,1,1]
+			id: texto1
+		Button:
+			text: "Salvar informações!"
+			font_size: '20dp'
+			on_press: root.fc()
+		Button:
+			text: "Próxima Tela"
+			font_size: '20dp'
+			on_press: root.manager.current = 'dois'
+
+<SegundoScreen>:
+	GridLayout:
+		cols: 1
+		padding: 0, 0
+		spacing: 0, 0
+		size_hint: (1, .8)
+		Label:
+			text: ""
+			font_size: '20dp'
